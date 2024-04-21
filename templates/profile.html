@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Student Profile</h1>
+    <p><strong>Name:</strong> {{ student[1] }}</p>
+    <p><strong>University:</strong> {{ student[2] }}</p>
+    <p><strong>Faculty:</strong> {{ student[3] }}</p>
+    <p><strong>Course:</strong> {{ student[4] }}</p>
+    <p><strong>Group:</strong> {{ student[5] }}</p>
+    <p><strong>Email:</strong> {{ student[6] }}</p>
+    <a href="{{ url_for('logout') }}">Logout</a>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="{{ url_for('register_student') }}" method="POST">
+        <label for="full_name">Full Name:</label><br>
+        <input type="text" id="full_name" name="full_name" required><br>
+        <label for="university">University:</label><br>
+        <input type="text" id="university" name="university" required><br>
+        <label for="faculty">Faculty:</label><br>
+        <input type="text" id="faculty" name="faculty" required><br>
+        <label for="course">Course:</label><br>
+        <input type="number" id="course" name="course" min="1" required><br>
+        <label for="group_name">Group Name:</label><br>
+        <input type="text" id="group_name" name="group_name" required><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Register">
+    </form>
+    <p>Already have an account? <a href="{{ url_for('login') }}">Login here</a></p>
+</body>
+</html>
